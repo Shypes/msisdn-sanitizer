@@ -1,4 +1,4 @@
-  String msisdn_sanitizer(String msisdn, String phone_code, {bool leading_zero = false, bool plus = true}) {
+String msisdn_sanitizer(String msisdn, String phone_code, {bool leading_zero = false, bool plus = true}) {
   msisdn = msisdn.trim();
   msisdn = msisdn.replaceAll("+", "");
   msisdn = msisdn.replaceAll(RegExp(r'[^0-9]'), '');
